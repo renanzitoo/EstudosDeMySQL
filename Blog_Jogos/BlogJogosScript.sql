@@ -100,6 +100,7 @@ UPDATE comentarios set titulo ="CARA MUITO FODA!" where id= 9000000;
 DELETE from postagens where id =0000001;
 DELETE from comentarios where id=9000001;
 
+#SELECTS
 
 SELECT * FROM usuarios;
 SELECT * FROM postagens;
@@ -117,5 +118,16 @@ SELECT * FROM postagens WHERE user_id=2022003;
 
 SELECT * FROM comentarios WHERE post_id=0000010;
 
+SELECT DISTINCT titulo, conteudo FROM comentarios where post_id=0000010;
+
+SELECT * FROM usuarios ORDER BY nome asc;
+
+SELECT * FROM postagens WHERE titulo LIKE '%politica%';
+
+SELECT * FROM comentarios WHERE conteudo LIKE '%politica%';
+
+SELECT * FROM postagens WHERE titulo OR conteudo LIKE '%politica%';
+
+SELECT * FROM postagens WHERE titulo AND conteudo LIKE '%politica%';
 
 
